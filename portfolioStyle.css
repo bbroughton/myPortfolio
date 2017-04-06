@@ -1,0 +1,129 @@
+
+.port-area table{
+	display: table;
+	width:90%;
+	margin:auto;
+}
+
+td {
+	display: block;
+    height:200px;
+    width:90%;
+    position:relative;
+
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+td .content {
+	width:100%;
+	margin:20px;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+}
+
+.filtered{
+	filter:opacity(.6);
+	filter:grayscale(1);
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.filtered:hover{
+	filter:none;
+}
+td .content:hover{
+	margin:10px;
+}
+
+.top{
+		margin-bottom:10%;
+	}
+
+@media only screen and (min-width: 321px) {
+	
+	.port-area table{
+		width:90%;
+		margin:auto;
+	}
+
+	td {
+	    height:200px;
+	    width:90%;
+		}
+
+
+
+}
+
+@media only screen and (min-width: 500px) {
+	
+	td{
+		height:250px;
+	}
+
+@media only screen and (min-width: 620px) {
+	
+	.port-area table{
+		width:90%;
+		margin:auto;
+
+	}
+	td {
+		margin: 5px;
+		display:inline-block;
+		width:30%;
+		height:300px;
+		}
+
+}
+
+@media only screen and (min-width: 800px) {
+	port-area table{
+		margin-left:5%;
+	}
+
+	td .content{
+		margin:20px;
+	}
+
+	td .content:hover{
+		margin:15px;
+	}
+
+}
+
+
+@media only screen and (min-width: 985px) {
+	.top{
+		margin-bottom:100px ;
+	}
+	.small-table{
+		width:80%;
+		border-spacing: 30%;
+	}
+	td{
+
+		height:300px;
+		
+	}
+	td .content{
+		margin:50px;
+	}
+
+	td .content:hover{
+		margin:30px;
+	}
+
+
+
+
+}
